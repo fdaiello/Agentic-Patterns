@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
-load_dotenv(".env")
+load_dotenv()
 
 class Furniture(BaseModel):
     type: str = Field(

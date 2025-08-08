@@ -1,14 +1,11 @@
-
-import os
 from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv(".env")
-
 from langchain_community.document_loaders import CSVLoader
 from langchain_community.vectorstores import Qdrant
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import RetrievalQA
+
+# Load environment variables
+load_dotenv()
 
 loader = CSVLoader(
     file_path="./src/RAG-file/dataset_small.csv", source_column="title"

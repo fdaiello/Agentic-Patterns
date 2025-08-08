@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables
-load_dotenv(".env")
+load_dotenv()
 
 # Debug: Check if API key is loaded
 api_key = os.getenv("OPENAI_API_KEY")
