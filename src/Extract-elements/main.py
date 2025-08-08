@@ -1,13 +1,12 @@
 from langchain.chat_models import ChatOpenAI
-from langchain.prompts.chat import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
-load_dotenv("../.env")
-
+load_dotenv(".env")
 
 class Furniture(BaseModel):
     type: str = Field(
