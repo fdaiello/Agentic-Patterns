@@ -4,3 +4,4 @@ langchain
 beautifulsoup4
 faiss-cpu
 tiktoken
+langchain_community
