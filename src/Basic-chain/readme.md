@@ -1,22 +1,26 @@
 # 🚀 Super Simple LangChain Example
 
-This repository contains a **beginner-friendly example** of using [LangChain](https://www.langchain.com/) with OpenAI's language models. It's the **simplest possible way** to get started, making it perfect for those new to LangChain, LLMs, or Python-based AI development.
+This example demonstrates the absolute basics of using [LangChain](https://python.langchain.com/) with OpenAI's GPT models. It's designed for beginners who want to understand how to:
+
+- Connect to an LLM (Language Model)
+- Use prompt templates
+- Build simple chains
 
 ---
 
-## 📦 What’s Included
+## 📂 What does this script do?
 
-This example demonstrates:
-- How to initialize a language model using `langchain-openai`
-- How to invoke the model directly with a simple prompt
-- How to create and reuse prompt templates
-- How to chain templates and models together using LangChain’s syntax
+1. **Loads your OpenAI API key** from a `.env` file
+2. **Creates a language model** using `ChatOpenAI`
+3. **Runs three simple examples:**
+   - Direct question to the LLM
+   - Using a prompt template
+   - Reusing the template for multiple topics
 
 ---
 
-## 🧰 Requirements
+## 🚀 How to Run
 
-Before running the code, make sure you have the following Python packages installed:
-
-```bash
-pip install langchain-openai python-dotenv
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
